@@ -8,6 +8,7 @@
 
 body {
   background-color: darkgray;
+  text-decoration: line-through;
 }
 
 .navigation__link {
