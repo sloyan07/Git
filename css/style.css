@@ -10,6 +10,7 @@ body {
   background-color: darkgray;
 }
 
+/*jjihellow haxyu*/
 .navigation__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,7 +25,8 @@ body {
 }
 .navigation__link a {
   font-size: 20px;
-  color: violet;
+  font-weight: 600;
+  color: rgb(131, 58, 180);
   text-decoration: none;
   margin: 20px 25px;
   letter-spacing: 1px;
@@ -63,6 +65,10 @@ header {
   font-family: Roboto;
 }
 
+table {
+  border: 2px solid white;
+}
+
 th {
   background-color: #960000;
   font-weight: 800;
@@ -74,4 +80,15 @@ td {
   padding: 5px;
   background-color: rgb(73, 73, 238);
   color: white;
+}
+
+.grid {
+  padding: 0 0 0 40px;
+}
+
+.grid__h1 {
+  font-size: 22px;
+  color: white;
+  font-family: Roboto;
+  letter-spacing: 1px;
 }

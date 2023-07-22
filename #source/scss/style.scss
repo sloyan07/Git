@@ -13,7 +13,7 @@ background-color:darkgray;
 
 }
 
-
+/*jjihellow haxyu*/
 
 
 
@@ -25,7 +25,8 @@ background-color:darkgray;
   font-family: Poppins;
   a{
     font-size: 20px;
-    color: violet;
+    font-weight: 600;
+    color: rgb(131,58,180);
     text-decoration: none;
     margin: 20px 25px;
     letter-spacing: 1px;
@@ -67,7 +68,9 @@ a{
 }
 
 
-
+table{
+  border: 2px solid white;
+}
 
 th{
   background-color: #960000;
@@ -81,3 +84,39 @@ td{
   background-color: rgb(73, 73, 238);
   color: white;
 }
+
+
+
+
+.grid{
+padding: 0 0 0 40px;
+
+}
+
+.grid__body{
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows:  ;
+}
+
+
+.grid__h1{
+  font-size: 22px;
+  color:  white;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+
+
+.grid__item{
+  text-align: center;
+border: 2px dashed #0000;
+padding: 20px;
+}
+
+
+
+
+
+
+
