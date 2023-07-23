@@ -64,69 +64,22 @@ header {
   font-family: Roboto;
 }
 
-table {
-  border: 2px solid white;
-}
-
-th {
-  background-color: #960000;
-  font-weight: 800;
-  color: white;
-  padding: 5px;
-}
-
-td {
-  padding: 5px;
-  background-color: rgb(73, 73, 238);
-  color: white;
-}
-
 .grid-wrapper {
   display: -ms-grid;
   display: grid;
-  margin: 0 25%;
-  -ms-grid-columns: 300px 150px 300px;
-  grid-template-columns: 300px 150px 300px;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  text-align: center;
+  margin: 0 100px;
+  -ms-grid-columns: 150px 1fr;
+  grid-template-columns: 150px 1fr;
+  -ms-grid-rows: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+      grid-template-areas: "header header" "side content";
   font-size: 18px;
   font-family: Roboto sans-serif;
 }
 
-.grid-wrapper > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.grid-wrapper > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.grid-wrapper > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.grid-wrapper > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.grid-wrapper > *:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.grid-wrapper > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-
-.grid-header, .grid-side, .grid-content, .grid-footer, .grid-main, .grid-button {
+.grid-header, .grid-side, .grid-content {
   padding: 30px;
   border: 2px dashed dimgray;
   font-family: Roboto;
-  margin-top: 5px;
+  margin-top: 10px;
 }
