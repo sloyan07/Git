@@ -9,13 +9,7 @@
 
 body{
 background-color:darkgray;
-
-
 }
-
-/*jjihellow haxyu*/
-
-
 
 
 .navigation__link{
@@ -88,31 +82,28 @@ td{
 
 
 
-.grid{
-padding: 0 0 0 40px;
 
-}
 
-.grid__body{
+.grid-wrapper{
   display: grid;
-  grid-template-columns: ;
-  grid-template-rows:  ;
-}
-
-
-.grid__h1{
-  font-size: 22px;
-  color:  white;
-  font-family: Roboto;
-  letter-spacing: 1px;
-}
-
-
-.grid__item{
+  margin:  0 25%;
+  grid-template-columns: 300px 150px 300px ;
+  grid-template-rows: 1fr 1fr  ;
   text-align: center;
-border: 2px dashed #0000;
-padding: 20px;
+  font-size: 18px;
+  font-family: Roboto sans-serif;
 }
+
+ 
+.grid-header, .grid-side, .grid-content, .grid-footer, .grid-main, .grid-button{
+  padding: 30px;
+  border: 2px dashed dimgray;
+  font-family: Roboto;
+margin-top: 5px;
+}
+
+
+
 
 
 

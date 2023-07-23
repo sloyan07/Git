@@ -81,52 +81,92 @@ td {
   color: white;
 }
 
+.grid {
+  padding: 0 40px 0 40px;
+}
+
+.grid__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (400px)[3];
+  grid-template-columns: repeat(3, 400px);
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid__body > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.grid__body > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.grid__body > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.grid__body > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.grid__body > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.grid__body > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+.grid__h1 {
+  font-size: 22px;
+  color: white;
+  font-family: Roboto;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.grid__item {
+  text-align: center;
+  border: 2px dashed dimgray;
+  padding: 15px;
+  font-family: Roboto;
+}
+
 .grid-wrapper {
   display: -ms-grid;
   display: grid;
-  margin: 0 25%;
-  -ms-grid-columns: 300px 150px 300px;
-  grid-template-columns: 300px 150px 300px;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  text-align: center;
-  font-size: 18px;
-  font-family: Roboto sans-serif;
+  padding: 0 20px;
+      grid-template-areas: "header header" "side content";
 }
 
-.grid-wrapper > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
 
-.grid-wrapper > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.grid-wrapper > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.grid-wrapper > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.grid-wrapper > *:nth-child(5) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.grid-wrapper > *:nth-child(6) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-
-.grid-header, .grid-side, .grid-content, .grid-footer, .grid-main, .grid-button {
+.grid-header, .grid-side, .grid-content{
   padding: 30px;
   border: 2px dashed dimgray;
-  font-family: Roboto;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+.grid-side {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: side;
+}
+
+.grid-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.grid-content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content;
 }
