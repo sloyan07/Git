@@ -62,15 +62,48 @@ header{
   }
 }
 
-.main__list{
-  margin: 0 0 0 40px;
-  li{
-    
-    a{
-      color: black;
-    }
-  }
+
+
+
+.wrapper{
+  display: grid;
+  margin: 0 15%;
+  grid-template-columns: repeat(3,300px);
+  grid-template-rows: repeat(3, 100px);
+  column-gap: 20px;
+  row-gap: 35px;
 }
+
+
+
+.grid-item{
+  text-align: center;
+  border: 2px dashed dimgray;
+  font-family: Roboto;
+  font-size: 18px;
+  padding: 30px;
+
+}
+
+.grid-item1{
+
+  background-color: #960000;
+  color: white;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
